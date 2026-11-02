@@ -46,7 +46,9 @@ fun parseBatikJson(json: String): List<BatikData> {
             meaning = obj.getString("meaning"),
             history = obj.getString("history"),
             imagePath = obj.optString("imagePath").ifBlank { null },
-            modelPath = obj.optString("modelPath").ifBlank { null }
+            modelPath = obj.optString("modelPath").ifBlank { null },
+            material = obj.optString("material"),
+            coloring = obj.optString("coloring")
         )
     }
 }

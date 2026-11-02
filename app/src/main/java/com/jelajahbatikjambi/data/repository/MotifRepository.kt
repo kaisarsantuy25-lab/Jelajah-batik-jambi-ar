@@ -146,6 +146,8 @@ class MotifRepository private constructor(private val application: Application) 
         shortDescription: String,
         meaning: String,
         history: String,
+        material: String,
+        coloring: String,
         newImageFilePath: String?
     ) {
         val previous = overrideDao.getByBatikId(batikId)
@@ -157,6 +159,8 @@ class MotifRepository private constructor(private val application: Application) 
                 shortDescription = shortDescription.trim(),
                 meaning = meaning.trim(),
                 history = history.trim(),
+                material = material.trim(),
+                coloring = coloring.trim(),
                 imagePath = newImageFilePath ?: previous?.imagePath,
                 updatedAt = System.currentTimeMillis()
             )
@@ -307,6 +311,8 @@ fun applyBatikOverride(base: BatikData, override: BatikOverrideEntity?): BatikDa
         shortDescription = override.shortDescription.ifBlank { base.shortDescription },
         meaning = override.meaning.ifBlank { base.meaning },
         history = override.history.ifBlank { base.history },
+        material = override.material.ifBlank { base.material },
+        coloring = override.coloring.ifBlank { base.coloring },
         imagePath = override.imagePath ?: base.imagePath
     )
 }

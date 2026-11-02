@@ -137,14 +137,22 @@ fun DetailScreen(
             ) {
                 Text(text = currentBatik.name, style = MaterialTheme.typography.headlineMedium)
                 Text(
-                    text = currentBatik.category,
+                    text = "Unsur Motif: ${currentBatik.category}",
                     style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.primary
                 )
 
                 DetailSection(title = "Deskripsi", body = currentBatik.shortDescription)
-                DetailSection(title = "Makna", body = currentBatik.meaning)
-                DetailSection(title = "Sejarah", body = currentBatik.history)
+                DetailSection(title = "Filosofi", body = currentBatik.meaning)
+                if (currentBatik.material.isNotBlank()) {
+                    DetailSection(title = "Bahan Dasar", body = currentBatik.material)
+                }
+                if (currentBatik.coloring.isNotBlank()) {
+                    DetailSection(title = "Jenis Pewarnaan", body = currentBatik.coloring)
+                }
+                if (currentBatik.history.isNotBlank()) {
+                    DetailSection(title = "Sejarah", body = currentBatik.history)
+                }
 
                 Button(
                     onClick = onJelajahiDenganAr.withClickSound(),

@@ -41,12 +41,12 @@ import com.jelajahbatikjambi.ui.common.withClickSound
 import com.jelajahbatikjambi.ui.theme.Dimensions
 
 /**
- * Multiple-choice quiz (§ user request). With no [batikId] (started from the
- * Collection screen) the session holds every question the user has authored
- * ([CreateQuizScreen]); the app generates none of its own. With [batikId]
- * set — started right after scanning that motif in AR (§ user request:
- * "ketika klik mulai kuis pertanyaan sesuai dengan motif apa yang saya
- * scan") — it holds only the questions keyed to that motif.
+ * Multiple-choice quiz (§ user request). A session always holds **ten
+ * shuffled questions** drawn from the bundled bank
+ * (`assets/data/quiz_questions.json`) plus the questions the user authored
+ * ([CreateQuizScreen]); the questions are mixed across motifs, so [batikId]
+ * only identifies the scan that opened the screen, not a filter (§ user
+ * request: "soal yang tampil ada 10 tapi di acak setiap scan").
  *
  * Play-only screen: authoring questions (create/edit) lives exclusively
  * behind Kelola Koleksi → Kelola Soal Kuis (§ user request — "edit motif
@@ -55,9 +55,10 @@ import com.jelajahbatikjambi.ui.theme.Dimensions
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+@Suppress("UNUSED_PARAMETER")
 fun QuizScreen(batikId: Int?, onBack: () -> Unit) {
     val application = LocalContext.current.applicationContext as android.app.Application
-    val viewModel: QuizViewModel = viewModel(factory = QuizViewModel.factory(application, batikId))
+    val viewModel: QuizViewModel = viewModel(factory = QuizViewModel.factory(application))
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
     // A question set edited in the background (e.g. via Kelola Soal Kuis
@@ -89,10 +90,7 @@ fun QuizScreen(batikId: Int?, onBack: () -> Unit) {
         ) {
             when {
                 uiState.isLoading -> LoadingState(modifier = Modifier.fillMaxSize())
-                uiState.questions.isEmpty() -> EmptyState(
-                    batikId = batikId,
-                    modifier = Modifier.fillMaxSize()
-                )
+                uiState.questions.isEmpty() -> EmptyState(modifier = Modifier.fillMaxSize())
                 uiState.isFinished -> ResultState(
                     score = uiState.score,
                     total = uiState.questions.size,
@@ -124,23 +122,19 @@ private fun LoadingState(modifier: Modifier = Modifier) {
 // across runs (adb install -r keeps app data, so "nothing discovered yet"
 // isn't reliably true on a real device after earlier manual testing).
 @Composable
-internal fun EmptyState(batikId: Int? = null, modifier: Modifier = Modifier) {
+internal fun EmptyState(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier.padding(Dimensions.spacingLg),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = if (batikId != null) "Belum ada soal untuk motif ini" else "Belum ada soal kuis",
+            text = "Belum ada soal kuis",
             style = MaterialTheme.typography.headlineMedium,
             textAlign = TextAlign.Center
         )
         Text(
-            text = if (batikId != null) {
-                "Tambahkan soal untuk motif ini lewat Koleksi → Kelola Soal Kuis."
-            } else {
-                "Buat soal kuis pertamamu lewat Koleksi → Kelola Soal Kuis, lalu pilih motif yang ingin diujikan."
-            },
+            text = "Tambahkan soal lewat Koleksi → Kelola Soal Kuis untuk melengkapi bank soal.",
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.Center
         )
@@ -168,10 +162,6 @@ internal fun QuestionState(
             text = "Soal ${uiState.currentIndex + 1} dari ${uiState.questions.size}",
             style = MaterialTheme.typography.labelLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
-        Text(
-            text = "Motif Batik Jambi manakah ini?",
-            style = MaterialTheme.typography.titleMedium
         )
         Text(
             text = question.prompt,

@@ -157,11 +157,11 @@ fun ManageCustomQuizScreen(
         if (showDeleteAllDialog) {
             AlertDialog(
                 onDismissRequest = { showDeleteAllDialog = false },
-                title = { Text("Hapus semua soal kuis?") },
+                title = { Text("Hapus semua soal buatan sendiri?") },
                 text = {
                     Text(
-                        "${uiState.questions.size} soal akan dihapus permanen. " +
-                            "Tindakan ini tidak bisa dibatalkan."
+                        "${uiState.questions.size} soal buatan sendiri akan dihapus permanen. " +
+                            "Soal bawaan tetap tersedia. Tindakan ini tidak bisa dibatalkan."
                     )
                 },
                 confirmButton = {
@@ -197,7 +197,7 @@ private fun EmptyState(onAddQuestion: () -> Unit, modifier: Modifier = Modifier)
             textAlign = TextAlign.Center
         )
         Text(
-            text = "Tekan tombol + di layar kuis untuk membuat soal, lalu kelola soalnya di sini.",
+            text = "Buat soal lewat tombol di bawah, lalu kelola soalnya di sini.",
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.Center
         )

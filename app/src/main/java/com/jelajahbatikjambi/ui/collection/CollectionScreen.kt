@@ -180,7 +180,7 @@ private fun EmptyCollectionMessage(onAddMotif: () -> Unit, modifier: Modifier = 
             textAlign = TextAlign.Center
         )
         Text(
-            text = "Aplikasi mulai tanpa motif bawaan. Tambahkan motif batik pertamamu — foto motifnya didaftarkan untuk dipindai di AR, model 3D dibuat otomatis, dan soal kuis bisa langsung ditautkan ke motif tersebut.",
+            text = "Belum ada motif di perangkat ini. Tambahkan motif batik pertamamu — foto motifnya didaftarkan untuk dipindai di AR, model 3D dibuat otomatis, dan soal kuis bisa langsung ditautkan ke motif tersebut.",
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.Center
         )

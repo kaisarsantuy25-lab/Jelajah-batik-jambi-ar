@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "id": 1,
+    "markerId": 1,
+    "name": "Angso Duo",
+    "category": "Fauna",
+    "shortDescription": "Motif Angso Duo merupakan salah satu motif khas Batik Jambi yang menampilkan ornamen angsa sebagai unsur utamanya. Motif ini memiliki keterkaitan dengan sejarah dan identitas budaya Kota Jambi.",
+    "meaning": "Motif Angso Duo mengandung nilai kegigihan, kesabaran, dan keharmonisan dalam kehidupan. Filosofi tersebut mengajarkan manusia untuk menghadapi berbagai keadaan dengan sabar, terus berusaha, serta menjaga hubungan baik dengan sesama makhluk hidup. Motif ini juga berkaitan dengan identitas Kota Jambi yang dikenal sebagai Tanah Pilih Pesako Betuah.",
+    "history": "",
+    "material": "Katun Primisima",
+    "coloring": "Alami",
+    "imagePath": "images/angso_duo.jpeg",
+    "modelPath": "models/angso_duo.glb"
+  },
+  {
+    "id": 2,
+    "markerId": 2,
+    "name": "Bungo Kaco Piring",
+    "category": "Flora",
+    "shortDescription": "Motif Bungo Kaco Piring merupakan motif Batik Jambi yang menampilkan ornamen bunga sebagai unsur utamanya. Bentuk ragam hiasnya terinspirasi dari bunga kaca piring dan ornamen bunga pada piring kaca.",
+    "meaning": "Motif Bungo Kaco Piring memiliki makna yang berkaitan dengan sejarah penggunaan piring kaca di Jambi pada masa pemerintahan Belanda. Bentuk bunga yang terdapat pada bagian dasar piring kaca tersebut menjadi inspirasi dalam pembentukan motif batik. Motif ini menunjukkan hubungan antara perkembangan seni batik dengan benda dan lingkungan yang dikenal dalam kehidupan masyarakat Jambi pada masa itu.",
+    "history": "",
+    "material": "Katun Primisima",
+    "coloring": "Kimia",
+    "imagePath": "images/bungo_kaco_piring.jpeg",
+    "modelPath": "models/bungo_kaco_piring.glb"
+  },
+  {
+    "id": 3,
+    "markerId": 3,
+    "name": "Bungo Melati",
+    "category": "Flora",
+    "shortDescription": "Motif Bungo Melati merupakan motif Batik Jambi yang terinspirasi dari bentuk bunga melati. Motif ini menggunakan ornamen bunga sebagai unsur utama dalam pembentukan pola hiasnya.",
+    "meaning": "Motif Bungo Melati mengandung nilai rasa cukup atau qanaah, yaitu sikap menerima dan mensyukuri segala sesuatu yang dimiliki. Filosofi ini mengajarkan manusia untuk tidak merasa iri terhadap keadaan orang lain serta memahami bahwa setiap makhluk memiliki peran masing-masing dalam kehidupan.",
+    "history": "",
+    "material": "Katun Primisima",
+    "coloring": "Kimia",
+    "imagePath": "images/bungo_melati.jpeg",
+    "modelPath": "models/bungo_melati.glb"
+  },
+  {
+    "id": 4,
+    "markerId": 4,
+    "name": "Tampuk Manggis",
+    "category": "Flora",
+    "shortDescription": "Motif Tampuk Manggis merupakan motif Batik Jambi yang terinspirasi dari bentuk bagian buah manggis. Bentuk tersebut dikembangkan menjadi ornamen dekoratif yang disusun secara berulang pada kain batik.",
+    "meaning": "Motif Tampuk Manggis mengandung nilai ketulusan dan kebersihan hati. Makna tersebut mengajarkan manusia untuk memiliki niat yang baik, bersikap jujur, serta menjaga ketulusan dalam menjalin hubungan dengan orang lain.",
+    "history": "",
+    "material": "Semi Sutra",
+    "coloring": "Kimia",
+    "imagePath": "images/tampuk_manggis.jpeg",
+    "modelPath": "models/tampuk_manggis.glb"
+  },
+  {
+    "id": 5,
+    "markerId": 5,
+    "name": "Kapal Sanggat",
+    "category": "Flora dan Kapal",
+    "shortDescription": "Motif Kapal Sanggat merupakan salah satu motif Batik Jambi yang memadukan ornamen tumbuhan dengan bentuk kapal atau perahu. Bentuk kapal menjadi unsur visual yang membedakan motif ini dari motif lainnya.",
+    "meaning": "Motif Kapal Sanggat mengandung nasihat tentang pentingnya kesungguhan, ketekunan, dan tanggung jawab dalam menjalani kehidupan. Filosofi ini mengajarkan manusia untuk memiliki tujuan yang jelas, tidak mudah menyerah ketika menghadapi kesulitan, serta menyelesaikan setiap pekerjaan dengan penuh tanggung jawab.",
+    "history": "",
+    "material": "Katun Primisima",
+    "coloring": "Alami",
+    "imagePath": "images/kapal_sanggat.jpeg",
+    "modelPath": "models/kapal_sanggat.glb"
+  },
+  {
+    "id": 6,
+    "markerId": 6,
+    "name": "Durian Pecah",
+    "category": "Flora",
+    "shortDescription": "Motif Durian Pecah merupakan motif Batik Jambi yang menggunakan unsur tumbuhan sebagai inspirasi ragam hiasnya. Motif ini memiliki nilai budaya dan pesan moral yang berkaitan dengan kehidupan manusia.",
+    "meaning": "Motif Durian Pecah mengandung nilai kepemimpinan yang menekankan pentingnya sifat amanah, ketegasan, dan pendirian yang kuat. Filosofi tersebut mengajarkan bahwa seseorang yang memiliki tanggung jawab, khususnya seorang pemimpin, harus mampu menjalankan amanah dengan baik serta memberikan manfaat kepada masyarakat di sekitarnya.",
+    "history": "",
+    "material": "Katun Primisima",
+    "coloring": "Kimia",
+    "imagePath": "images/durian_pecah.jpeg",
+    "modelPath": "models/durian_pecah.glb"
+  }
+]

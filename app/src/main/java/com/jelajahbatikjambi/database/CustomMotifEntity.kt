@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 /**
  * A motif the user added themselves by uploading a photo (§ user request —
- * "tambahkan motif dengan upload .jpg"), as opposed to one of the 4 built-in
+ * "tambahkan motif dengan upload .jpg"), as opposed to one of the 6 built-in
  * motifs bundled in `assets/data/batik.json`. [imagePath]/[modelPath] are
  * absolute file paths in app-private internal storage (the uploaded photo,
  * and a textured cube GLB generated on-device from it via
@@ -29,5 +29,9 @@ data class CustomMotifEntity(
     val modelPath: String,
     val meaning: String? = null,
     val history: String? = null,
+    /** "Bahan Dasar" — null until the user fills it in on the edit screen. */
+    val material: String? = null,
+    /** "Jenis Pewarnaan" — null until the user fills it in on the edit screen. */
+    val coloring: String? = null,
     val createdAt: Long
 )

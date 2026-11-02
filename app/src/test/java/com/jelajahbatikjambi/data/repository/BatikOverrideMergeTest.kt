@@ -23,7 +23,9 @@ class BatikOverrideMergeTest {
         meaning = "Makna asli (placeholder).",
         history = "Sejarah asli (placeholder).",
         imagePath = "images/angso_duo.jpeg",
-        modelPath = "models/motif_angso_duo.glb"
+        modelPath = "models/motif_angso_duo.glb",
+        material = "Katun Primisima",
+        coloring = "Alami"
     )
 
     private fun overrideOf(
@@ -33,6 +35,8 @@ class BatikOverrideMergeTest {
         shortDescription: String = "Deskripsi editan.",
         meaning: String = "Makna editan.",
         history: String = "Sejarah editan.",
+        material: String = "Semi Sutra",
+        coloring: String = "Kimia",
         imagePath: String? = null
     ) = BatikOverrideEntity(
         batikId = batikId,
@@ -41,6 +45,8 @@ class BatikOverrideMergeTest {
         shortDescription = shortDescription,
         meaning = meaning,
         history = history,
+        material = material,
+        coloring = coloring,
         imagePath = imagePath,
         updatedAt = 123L
     )
@@ -59,6 +65,8 @@ class BatikOverrideMergeTest {
         assertEquals("Deskripsi editan.", merged.shortDescription)
         assertEquals("Makna editan.", merged.meaning)
         assertEquals("Sejarah editan.", merged.history)
+        assertEquals("Semi Sutra", merged.material)
+        assertEquals("Kimia", merged.coloring)
     }
 
     @Test
@@ -88,7 +96,15 @@ class BatikOverrideMergeTest {
     fun `blank overlay fields keep the original text instead of erasing it`() {
         val merged = applyBatikOverride(
             builtIn,
-            overrideOf(name = "   ", category = "", shortDescription = "", meaning = "", history = "")
+            overrideOf(
+                name = "   ",
+                category = "",
+                shortDescription = "",
+                meaning = "",
+                history = "",
+                material = "",
+                coloring = ""
+            )
         )
 
         assertEquals("Angso Duo", merged.name)
@@ -96,6 +112,8 @@ class BatikOverrideMergeTest {
         assertEquals("Deskripsi asli.", merged.shortDescription)
         assertEquals("Makna asli (placeholder).", merged.meaning)
         assertEquals("Sejarah asli (placeholder).", merged.history)
+        assertEquals("Katun Primisima", merged.material)
+        assertEquals("Alami", merged.coloring)
     }
 
     @Test

@@ -98,6 +98,8 @@ private fun CustomMotifEntity.toBatikData(): BatikData {
         meaning = meaning?.takeIf { it.isNotBlank() } ?: UNVERIFIED_MEANING,
         history = history?.takeIf { it.isNotBlank() } ?: UNVERIFIED_HISTORY,
         imagePath = imagePath,
-        modelPath = modelPath
+        modelPath = modelPath,
+        material = material.orEmpty(),
+        coloring = coloring.orEmpty()
     )
 }

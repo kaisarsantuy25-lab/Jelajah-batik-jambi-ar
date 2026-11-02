@@ -167,7 +167,19 @@ fun EditMotifScreen(
             OutlinedTextField(
                 value = uiState.category,
                 onValueChange = viewModel::onCategoryChanged,
-                label = { Text("Kategori") },
+                label = { Text("Unsur motif / kategori") },
+                modifier = Modifier.fillMaxWidth()
+            )
+            OutlinedTextField(
+                value = uiState.material,
+                onValueChange = viewModel::onMaterialChanged,
+                label = { Text("Bahan dasar") },
+                modifier = Modifier.fillMaxWidth()
+            )
+            OutlinedTextField(
+                value = uiState.coloring,
+                onValueChange = viewModel::onColoringChanged,
+                label = { Text("Jenis pewarnaan") },
                 modifier = Modifier.fillMaxWidth()
             )
             OutlinedTextField(
@@ -179,7 +191,7 @@ fun EditMotifScreen(
             OutlinedTextField(
                 value = uiState.meaning,
                 onValueChange = viewModel::onMeaningChanged,
-                label = { Text("Makna") },
+                label = { Text("Filosofi") },
                 minLines = 3,
                 modifier = Modifier.fillMaxWidth()
             )

@@ -37,6 +37,10 @@ data class EditMotifUiState(
     val shortDescription: String = "",
     val meaning: String = "",
     val history: String = "",
+    /** "Bahan Dasar" — optional, blank keeps the original/bundled value. */
+    val material: String = "",
+    /** "Jenis Pewarnaan" — optional, blank keeps the original/bundled value. */
+    val coloring: String = "",
     /** Quiz questions keyed to this motif, live — added/edited elsewhere shows up here. */
     val questions: List<CustomQuizQuestionEntity> = emptyList(),
     /** All motifs in the app — drives whether this one may be deleted (more than one must remain). */
@@ -122,6 +126,8 @@ class EditMotifViewModel(application: Application, private val batikId: Int) : A
                 shortDescription = motif.shortDescription,
                 meaning = motif.meaning,
                 history = motif.history,
+                material = motif.material,
+                coloring = motif.coloring,
                 totalMotifs = allMotifs.size
             )
         }
@@ -151,6 +157,10 @@ class EditMotifViewModel(application: Application, private val batikId: Int) : A
     fun onMeaningChanged(value: String) = update { it.copy(meaning = value) }
 
     fun onHistoryChanged(value: String) = update { it.copy(history = value) }
+
+    fun onMaterialChanged(value: String) = update { it.copy(material = value) }
+
+    fun onColoringChanged(value: String) = update { it.copy(coloring = value) }
 
     fun save() {
         val state = _uiState.value
@@ -242,6 +252,8 @@ class EditMotifViewModel(application: Application, private val batikId: Int) : A
             shortDescription = state.shortDescription,
             meaning = state.meaning,
             history = state.history,
+            material = state.material,
+            coloring = state.coloring,
             newImageFilePath = newImagePath
         )
     }
@@ -263,7 +275,9 @@ class EditMotifViewModel(application: Application, private val batikId: Int) : A
                 category = state.category.trim(),
                 shortDescription = state.shortDescription.trim(),
                 meaning = state.meaning.trim().ifBlank { null },
-                history = state.history.trim().ifBlank { null }
+                history = state.history.trim().ifBlank { null },
+                material = state.material.trim().ifBlank { null },
+                coloring = state.coloring.trim().ifBlank { null }
             )
         )
     }

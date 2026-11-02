@@ -30,7 +30,7 @@ class QuizScreenComposablesTest {
     )
 
     @Test
-    fun emptyState_shows_prompt_to_create_a_question() {
+    fun emptyState_shows_prompt_to_add_a_question() {
         composeTestRule.setContent {
             JelajahBatikJambiTheme {
                 EmptyState()
@@ -38,19 +38,8 @@ class QuizScreenComposablesTest {
         }
 
         composeTestRule.onNodeWithText("Belum ada soal kuis").assertIsDisplayed()
-        composeTestRule.onNodeWithText("Tekan tombol + di atas untuk membuat soal kuis pertama Anda, lalu pilih motif yang ingin diujikan.")
+        composeTestRule.onNodeWithText("Tambahkan soal lewat Koleksi → Kelola Soal Kuis untuk melengkapi bank soal.")
             .assertIsDisplayed()
-    }
-
-    @Test
-    fun emptyState_scoped_to_a_motif_offers_creating_a_question_for_it() {
-        composeTestRule.setContent {
-            JelajahBatikJambiTheme {
-                EmptyState(batikId = 3)
-            }
-        }
-
-        composeTestRule.onNodeWithText("Belum ada soal untuk motif ini").assertIsDisplayed()
     }
 
     @Test

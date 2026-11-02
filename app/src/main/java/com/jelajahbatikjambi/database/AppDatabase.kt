@@ -14,7 +14,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         CustomQuizQuestionEntity::class,
         BatikOverrideEntity::class
     ],
-    version = 5,
+    version = 6,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -74,6 +74,30 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        /**
+         * v5 → v6: adds the "Bahan Dasar" ([CustomMotifEntity.material] /
+         * [BatikOverrideEntity.material]) and "Jenis Pewarnaan"
+         * ([CustomMotifEntity.coloring] / [BatikOverrideEntity.coloring])
+         * attributes shown on the detail page. Written explicitly — the
+         * destructive fallback would wipe discoveries, custom motifs and
+         * every quiz question on upgrade. The `DEFAULT ''` on the override
+         * columns means "not edited", so existing rows keep the bundled
+         * values; custom motifs are nullable because they had no such
+         * attributes before.
+         */
+        val MIGRATION_5_6 = object : Migration(5, 6) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE `custom_motifs` ADD COLUMN `material` TEXT")
+                db.execSQL("ALTER TABLE `custom_motifs` ADD COLUMN `coloring` TEXT")
+                db.execSQL(
+                    "ALTER TABLE `batik_overrides` ADD COLUMN `material` TEXT NOT NULL DEFAULT ''"
+                )
+                db.execSQL(
+                    "ALTER TABLE `batik_overrides` ADD COLUMN `coloring` TEXT NOT NULL DEFAULT ''"
+                )
+            }
+        }
+
         @Volatile
         private var instance: AppDatabase? = null
 
@@ -88,7 +112,7 @@ abstract class AppDatabase : RoomDatabase() {
                     // far; destructive fallback remains only as a safety net
                     // for gaps with no migration path (§56) — revisit before
                     // any release where wiping local data would matter.
-                    .addMigrations(MIGRATION_3_4, MIGRATION_4_5)
+                    .addMigrations(MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6)
                     .fallbackToDestructiveMigration(true)
                     .build()
                     .also { instance = it }

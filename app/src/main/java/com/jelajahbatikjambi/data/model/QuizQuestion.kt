@@ -7,7 +7,7 @@ package com.jelajahbatikjambi.data.model
  */
 const val CUSTOM_QUESTION_BATIK_ID = -1
 
-/** One user-authored multiple-choice quiz question, tied to a motif via [batikId]. */
+/** One multiple-choice quiz question — built in or user-authored — tied to a motif via [batikId]. */
 data class QuizQuestion(
     val batikId: Int,
     val prompt: String,

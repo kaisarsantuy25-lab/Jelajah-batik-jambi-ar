@@ -8,9 +8,10 @@ import kotlinx.coroutines.flow.map
 
 /**
  * Wraps [CustomQuizQuestionDao], exposing user-authored quiz questions
- * (§ user request: "opsi untuk buat kuis nya") as plain [QuizQuestion] —
- * the whole question set, since the app generates none of its own — for
- * [QuizViewModel][com.jelajahbatikjambi.ui.quiz.QuizViewModel].
+ * (§ user request: "opsi untuk buat kuis nya") as plain [QuizQuestion] for
+ * [QuizViewModel][com.jelajahbatikjambi.ui.quiz.QuizViewModel]. These are
+ * merged with the bundled bank from
+ * [BuiltInQuizRepository][com.jelajahbatikjambi.data.repository.BuiltInQuizRepository].
  */
 class CustomQuizRepository(private val dao: CustomQuizQuestionDao) {
 

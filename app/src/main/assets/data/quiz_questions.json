@@ -1,0 +1,392 @@
+[
+  {
+    "id": 101,
+    "package": 1,
+    "batikId": 1,
+    "prompt": "Motif Angso Duo menggunakan unsur alam berupa apa?",
+    "options": [
+      "Fauna",
+      "Flora",
+      "Geometris",
+      "Aksara"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 102,
+    "package": 1,
+    "batikId": 2,
+    "prompt": "Motif Bungo Kaco Piring terinspirasi dari bunga apa?",
+    "options": [
+      "Bunga melati",
+      "Bunga kaca piring",
+      "Bunga mawar",
+      "Bunga matahari"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": 103,
+    "package": 1,
+    "batikId": 3,
+    "prompt": "Motif Bungo Melati terinspirasi dari bentuk apa?",
+    "options": [
+      "Buah manggis",
+      "Buah durian",
+      "Daun kelapa",
+      "Bunga melati"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 104,
+    "package": 1,
+    "batikId": 4,
+    "prompt": "Motif Tampuk Manggis terinspirasi dari apa?",
+    "options": [
+      "Bagian buah manggis",
+      "Bentuk burung angsa",
+      "Bentuk kapal",
+      "Bunga melati"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 105,
+    "package": 1,
+    "batikId": 5,
+    "prompt": "Motif Kapal Sanggat memadukan unsur ragam hias berupa apa?",
+    "options": [
+      "Angsa dan bunga melati",
+      "Flora dan kapal atau perahu",
+      "Buah manggis dan durian",
+      "Bunga dan aksara"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": 106,
+    "package": 1,
+    "batikId": 6,
+    "prompt": "Motif Durian Pecah menggunakan unsur ragam hias berupa apa?",
+    "options": [
+      "Fauna",
+      "Aksara",
+      "Flora",
+      "Bentuk kapal"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 107,
+    "package": 1,
+    "batikId": 1,
+    "prompt": "Hewan apa yang menjadi ciri utama motif Angso Duo?",
+    "options": [
+      "Merak",
+      "Angsa",
+      "Kupu-kupu",
+      "Ikan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": 108,
+    "package": 1,
+    "batikId": 2,
+    "prompt": "Motif Bungo Kaco Piring termasuk ragam hias yang terinspirasi dari unsur apa?",
+    "options": [
+      "Fauna",
+      "Aksara",
+      "Flora",
+      "Laut"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 109,
+    "package": 1,
+    "batikId": 3,
+    "prompt": "Berdasarkan bentuk hiasannya, motif Bungo Melati termasuk kelompok apa?",
+    "options": [
+      "Flora",
+      "Fauna",
+      "Geometris",
+      "Aksara"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 110,
+    "package": 1,
+    "batikId": 4,
+    "prompt": "Selain ketulusan, filosofi Tampuk Manggis mengajarkan pentingnya apa?",
+    "options": [
+      "Mencari pujian",
+      "Mengutamakan diri sendiri",
+      "Memiliki banyak harta",
+      "Menjaga kebersihan hati"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 201,
+    "package": 2,
+    "batikId": 1,
+    "prompt": "Motif Angso Duo memiliki keterkaitan sejarah dengan Kota Jambi yang dikenal sebagai apa?",
+    "options": [
+      "Kota Hujan",
+      "Bumi Sriwijaya",
+      "Tanah Pilih Pesako Betuah",
+      "Serambi Mekkah"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 202,
+    "package": 2,
+    "batikId": 2,
+    "prompt": "Benda hias apa yang berkaitan dengan inspirasi motif Bungo Kaco Piring?",
+    "options": [
+      "Guci tanah liat",
+      "Anyaman bambu",
+      "Ukiran batu",
+      "Piring kaca"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 203,
+    "package": 2,
+    "batikId": 3,
+    "prompt": "Sikap qanaah yang terkandung dalam filosofi Bungo Melati berarti apa?",
+    "options": [
+      "Selalu menginginkan milik orang lain",
+      "Merasa cukup dan bersyukur atas yang dimiliki",
+      "Menghindari tanggung jawab",
+      "Mengutamakan kekayaan"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": 204,
+    "package": 2,
+    "batikId": 4,
+    "prompt": "Nilai utama yang terkandung dalam filosofi Tampuk Manggis adalah apa?",
+    "options": [
+      "Persaingan",
+      "Keangkuhan",
+      "Ketulusan hati",
+      "Kekuasaan"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 205,
+    "package": 2,
+    "batikId": 5,
+    "prompt": "Bentuk yang menjadi salah satu ciri utama motif Kapal Sanggat adalah apa?",
+    "options": [
+      "Burung angsa",
+      "Buah durian",
+      "Kapal atau perahu",
+      "Bunga kaca piring"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 206,
+    "package": 2,
+    "batikId": 6,
+    "prompt": "Sifat yang ditekankan dalam filosofi Durian Pecah bagi seorang pemimpin adalah apa?",
+    "options": [
+      "Mudah dipengaruhi",
+      "Mengutamakan kepentingan pribadi",
+      "Menghindari tanggung jawab",
+      "Amanah"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 207,
+    "package": 2,
+    "batikId": 5,
+    "prompt": "Salah satu nilai yang ditekankan dalam filosofi Kapal Sanggat adalah apa?",
+    "options": [
+      "Mengutamakan hasil tanpa proses",
+      "Menjalankan tanggung jawab hingga pekerjaan selesai",
+      "Menghindari tugas yang sulit",
+      "Bekerja hanya ketika mendapat pujian"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": 208,
+    "package": 2,
+    "batikId": 6,
+    "prompt": "Selain amanah, filosofi Durian Pecah menekankan pentingnya sikap apa?",
+    "options": [
+      "Tegas dan memiliki pendirian yang kuat",
+      "Mudah menyerah",
+      "Tidak peduli terhadap orang lain",
+      "Menghindari pengambilan keputusan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 209,
+    "package": 2,
+    "batikId": 1,
+    "prompt": "Nilai kehidupan apa yang terkandung dalam filosofi motif Angso Duo?",
+    "options": [
+      "Persaingan dan kesombongan",
+      "Kekuasaan dan kekayaan",
+      "Keberanian tanpa pertimbangan",
+      "Kesabaran dan ketekunan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 210,
+    "package": 2,
+    "batikId": 2,
+    "prompt": "Motif Batik Jambi yang berkaitan dengan bentuk bunga kaca piring adalah apa?",
+    "options": [
+      "Bungo Kaco Piring",
+      "Tampuk Manggis",
+      "Kapal Sanggat",
+      "Durian Pecah"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 301,
+    "package": 3,
+    "batikId": 1,
+    "prompt": "Sikap yang sesuai dengan filosofi motif Angso Duo adalah apa?",
+    "options": [
+      "Menjaga keharmonisan hubungan antarmakhluk hidup",
+      "Mengutamakan kepentingan pribadi",
+      "Menghindari kerja sama",
+      "Mudah menyerah saat menghadapi kesulitan"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 302,
+    "package": 3,
+    "batikId": 2,
+    "prompt": "Dua unsur yang menjadi inspirasi motif Bungo Kaco Piring adalah apa?",
+    "options": [
+      "Bentuk kapal dan ombak",
+      "Bentuk angsa dan tumbuhan",
+      "Bunga kaca piring dan hiasan piring kaca",
+      "Buah durian dan daun manggis"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 303,
+    "package": 3,
+    "batikId": 3,
+    "prompt": "Sikap apa yang perlu dihindari sesuai dengan filosofi Bungo Melati?",
+    "options": [
+      "Bersyukur",
+      "Menghargai perbedaan",
+      "Iri terhadap orang lain",
+      "Menerima keadaan dengan ikhlas"
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 304,
+    "package": 3,
+    "batikId": 3,
+    "prompt": "Ketika melihat teman memperoleh keberhasilan, sikap yang sesuai dengan filosofi Bungo Melati adalah apa?",
+    "options": [
+      "Membandingkan diri secara berlebihan",
+      "Merasa tidak senang dengan keberhasilannya",
+      "Menganggap keberhasilan orang lain sebagai ancaman",
+      "Tetap bersyukur dan menghargai keberhasilan teman"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 305,
+    "package": 3,
+    "batikId": 4,
+    "prompt": "Motif Tampuk Manggis menggunakan unsur ragam hias apa?",
+    "options": [
+      "Fauna",
+      "Flora",
+      "Aksara",
+      "Geometris"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": 306,
+    "package": 3,
+    "batikId": 4,
+    "prompt": "Contoh perilaku yang sesuai dengan filosofi Tampuk Manggis adalah apa?",
+    "options": [
+      "Membantu orang lain dengan niat yang tulus",
+      "Berbuat baik hanya untuk mendapat pujian",
+      "Mengabaikan orang yang membutuhkan bantuan",
+      "Menolong orang lain karena terpaksa"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 307,
+    "package": 3,
+    "batikId": 5,
+    "prompt": "Sikap yang sesuai dengan filosofi Kapal Sanggat ketika menghadapi kesulitan adalah apa?",
+    "options": [
+      "Tetap tekun dan tidak mudah menyerah",
+      "Menghentikan usaha sebelum selesai",
+      "Menyerahkan seluruh pekerjaan kepada orang lain",
+      "Mengabaikan tujuan yang ingin dicapai"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 308,
+    "package": 3,
+    "batikId": 5,
+    "prompt": "Filosofi motif Kapal Sanggat mengajarkan pentingnya apa?",
+    "options": [
+      "Menjalani kehidupan tanpa rencana",
+      "Menghindari pekerjaan sulit",
+      "Mengikuti keputusan orang lain",
+      "Memiliki tujuan yang jelas dalam kehidupan"
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 309,
+    "package": 3,
+    "batikId": 6,
+    "prompt": "Seorang pemimpin yang menerapkan filosofi Durian Pecah seharusnya melakukan apa?",
+    "options": [
+      "Hanya memikirkan kepentingannya sendiri",
+      "Memberikan manfaat bagi lingkungan dan masyarakat",
+      "Mengabaikan kebutuhan masyarakat",
+      "Menyerahkan seluruh tanggung jawab kepada orang lain"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": 310,
+    "package": 3,
+    "batikId": 6,
+    "prompt": "Pesan kehidupan yang terkandung dalam filosofi Durian Pecah adalah apa?",
+    "options": [
+      "Keistimewaan seseorang membuatnya bebas dari kewajiban",
+      "Pemimpin tidak perlu memperhatikan orang lain",
+      "Keistimewaan harus diimbangi dengan tanggung jawab",
+      "Kekuasaan merupakan tujuan utama kehidupan"
+    ],
+    "correctOptionIndex": 2
+  }
+]

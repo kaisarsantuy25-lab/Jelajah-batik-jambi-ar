@@ -1,5 +1,6 @@
 package com.jelajahbatikjambi.database
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -32,6 +33,10 @@ data class BatikOverrideEntity(
     val shortDescription: String,
     val meaning: String,
     val history: String,
+    /** "Bahan Dasar"; blank means "not edited", so the bundled value is kept. */
+    @ColumnInfo(defaultValue = "''") val material: String = "",
+    /** "Jenis Pewarnaan"; blank means "not edited", so the bundled value is kept. */
+    @ColumnInfo(defaultValue = "''") val coloring: String = "",
     val imagePath: String?,
     val updatedAt: Long
 )

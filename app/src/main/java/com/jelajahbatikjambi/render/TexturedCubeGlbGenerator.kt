@@ -11,7 +11,7 @@ import java.nio.ByteOrder
  * Builds a textured cube GLB entirely on-device, for user-uploaded custom
  * motifs (§ user request — "tambahkan motif dengan upload .jpg") that have
  * no bundled asset to fall back on. Mirrors the offline Python generator used
- * to pre-bake the 4 built-in motif cubes (identical cube geometry and UVs,
+ * to pre-bake the 6 built-in motif cubes (identical cube geometry and UVs,
  * and the same material) so a custom motif's 3D object looks and behaves
  * exactly like a built-in one — with one deliberate fix: the texture
  * sampler uses a single level (no mipmaps), since a mipmapped sampler on

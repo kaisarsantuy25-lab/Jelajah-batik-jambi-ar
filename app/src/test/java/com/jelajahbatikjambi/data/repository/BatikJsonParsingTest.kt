@@ -25,6 +25,8 @@ class BatikJsonParsingTest {
                 "shortDescription": "Deskripsi singkat.",
                 "meaning": "Makna.",
                 "history": "Sejarah.",
+                "material": "Katun Primisima",
+                "coloring": "Alami",
                 "imagePath": "images/angso_duo.jpeg",
                 "modelPath": "models/placeholder_cube.glb"
               }
@@ -42,6 +44,8 @@ class BatikJsonParsingTest {
         assertEquals("Deskripsi singkat.", batik.shortDescription)
         assertEquals("Makna.", batik.meaning)
         assertEquals("Sejarah.", batik.history)
+        assertEquals("Katun Primisima", batik.material)
+        assertEquals("Alami", batik.coloring)
         assertEquals("images/angso_duo.jpeg", batik.imagePath)
         assertEquals("models/placeholder_cube.glb", batik.modelPath)
     }
@@ -68,6 +72,8 @@ class BatikJsonParsingTest {
 
         assertNull(result.first().imagePath)
         assertNull(result.first().modelPath)
+        assertEquals("", result.first().material)
+        assertEquals("", result.first().coloring)
     }
 
     @Test

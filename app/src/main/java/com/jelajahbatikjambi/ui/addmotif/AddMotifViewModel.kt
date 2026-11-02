@@ -65,9 +65,10 @@ data class AddMotifUiState(
  * sync with the same shared detector, so a freshly added motif is scannable
  * immediately.
  *
- * The "buat soal kuis" section is ticked by default (the app has no bundled
- * questions — the user writes them, naturally when registering a new motif);
- * unticking it falls back to the add-motif-only flow. When ticked, a
+ * The "buat soal kuis" section is ticked by default so registering a new
+ * motif can also add a user-authored question (the built-in bank only covers
+ * the bundled motifs); unticking it falls back to the add-motif-only flow.
+ * When ticked, a
  * [com.jelajahbatikjambi.database.CustomQuizQuestionEntity] keyed to the new
  * motif's combined id is written in the same coroutine — saved after the
  * motif, because the question needs that id, and in the same [runCatching] so
